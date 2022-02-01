@@ -1,0 +1,11 @@
+nav.navbar {
+  background-color: #fff;
+  height: 90px;
+  .nav-item:not(:last-of-type) {
+    margin-right: 19px;
+  }
+  .nav-link {
+    font-weight: 700;
+    color: #333 !important;
+  }
+}
