@@ -1,8 +1,20 @@
-var array = [1, 1, 3, 6, 5, 2];
-
-for (let i = 0; i < array.length; i++) {
-  let arr = [array[i], array[array.length - 1 - i]];
-
-  let hi = [arr[0] + arr[1]];
-  console.log(hi);
-}
+$(".news__carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  navText: [
+    "<i class='fa-solid fa-arrow-left-long'></i>",
+    "<i class='fa-solid fa-arrow-right-long'></i>",
+  ],
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});

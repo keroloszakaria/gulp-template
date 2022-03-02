@@ -1,7 +1,7 @@
 .footer {
-  background: var(--body-color-alt);
+  background: #121a2f;
   position: relative;
-  padding: 3rem 1.5rem 3rem;
+  padding: 1rem 0;
   .footer-content {
     position: relative;
     z-index: 2;
@@ -17,8 +17,11 @@
         p {
           margin-bottom: 14px;
           font-size: var(--normal-font-size) !important;
-          color: var(--text-color-light);
+          color: #fff;
+          font-weight: bold;
           line-height: 28px;
+          font-family: "Lora", serif;
+
           // font-size: 16px !important;
         }
       }
@@ -51,23 +54,11 @@
           color: var(--first-color);
           font-size: var(--h3-font-size);
           font-weight: var(--font-semi-bold);
-          margin-bottom: 40px;
-          position: relative;
-          &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -15px;
-            height: 2px;
-            width: 50px;
-            background: var(--first-color);
-          }
+          margin-bottom: 15px;
         }
       }
       &__list {
         li {
-          display: inline-block;
-          width: 49%;
           margin-bottom: 12px;
           a {
             color: var(--text-color-light);
@@ -110,6 +101,9 @@
     }
   }
 }
+.copyright {
+  display: none;
+}
 
 .facebook-bg {
   background: var(--facebook-bg);
@@ -121,19 +115,42 @@
   background: var(--googleplus-bg);
 }
 
-.copyright {
-  background: var(--container-color);
-  padding: 10px 0;
-
-  &__text {
-    p {
-      margin: 0;
-      font-size: var(--smaller-font-size);
-      color: var(--text-color-light);
-      font-size: 16px !important;
-
-      a {
-        color: var(--first-color);
+@media (max-width: 576px) {
+  .footer .footer-content {
+    padding: 0 !important;
+    &__col {
+      margin: 15px 0;
+      &__heading h3 {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      &__list li a {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+  .copyright {
+    display: block;
+    padding: 35px 0;
+    text-align: center;
+    &-content {
+      text-align: center;
+      margin-top: 16px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #121a2f;
+      &__social {
+        margin: 22px 0;
+        a {
+          color: #121a2f;
+          display: inline-block;
+          font-size: 30px;
+          &:not(:last-of-type) {
+            margin-right: 15px;
+          }
+        }
       }
     }
   }

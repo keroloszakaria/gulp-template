@@ -2,21 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--body-font);
-}
-body {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  min-height: 100vh;
-  flex-direction: column;
-  background-color: #fff;
-}
-.page {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
+  font-family: "Lora", serif;
 }
 
 ul {
@@ -29,7 +15,7 @@ a {
 }
 
 section {
-  padding: 60px 60px;
+  padding: 60px 0;
   h2 {
     font-size: 2.2rem;
     font-weight: 700;
