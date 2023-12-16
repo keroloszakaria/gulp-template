@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keroloszakaria/.git"
+    "url": "git+https://github.com/keroloszakaria/gulp-template.git"
   },
   "author": "kerolos zakaria",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/keroloszakaria//issues"
+    "url": "https://github.com/keroloszakaria/gulp-template/issues"
   },
-  "homepage": "https://github.com/keroloszakaria/#readme",
+  "homepage": "https://github.com/keroloszakaria/gulp-template#readme",
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
