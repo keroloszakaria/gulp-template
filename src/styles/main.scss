@@ -10,12 +10,20 @@
 
 // Base
 @import "base/reset";
+@import "base/global";
 @import "base/typography";
 
 // Layout
 
 // Components
+@import "components/navbar";
+@import "components/card";
+@import "components/button";
+@import "components/product";
+@import "components/comment";
 
 // Plugin
+@import "plugins/bootstrap";
 
 // Pages
+@import "pages/product_details";
